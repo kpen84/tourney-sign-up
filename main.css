@@ -90,7 +90,7 @@ li{
 }
 
 h1{
-    font-family: 'luckiest_guyregular';
+    font-family: 'impactbold';
     font-size: 2.5em;
     font-weight: bolder;
     display: flex;
@@ -102,18 +102,18 @@ h1{
 }
 
 h2{
-    font-family: 'happy_monkeyregular';
+    font-family: 'impactregular';
     padding: 1rem 3rem;
 }
 
 p{
-    font-family: 'gloria_hallelujahregular';
+    font-family: 'impactregular';
     padding: 1rem 3rem;
     font-size: 1.2em;
 }
 
 a{
-    font-family: 'happy_monkeyregular';
+    font-family: 'impactregular';
     padding: 0 1em;
 }
 
