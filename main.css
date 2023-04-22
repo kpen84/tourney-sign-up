@@ -139,7 +139,7 @@ li:hover,
 .banner{
     max-width: 900px;
     background-color: var(--bg-color);
-    background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);
+    /*background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);*/
     background-repeat: no-repeat;
     background-position: top left, top right, bottom left, bottom right;
     background-size: 25%;
@@ -253,7 +253,7 @@ header{
     align-items: center;
     width: 100%;
     max-height: 140px;
-    background-image: url(../images/header-left.png), url(../images/header-right.png);
+    /*background-image: url(../images/header-left.png), url(../images/header-right.png);*/
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: top left, top right;
@@ -333,7 +333,7 @@ main{
     max-width: 900px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
-    background-image: url(/images/hotdogbanner2.png);
+    /*background-image: url(/images/hotdogbanner2.png);*/
     background-repeat: repeat-y;
 }
 
