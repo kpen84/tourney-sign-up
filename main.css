@@ -1,0 +1,593 @@
+@font-face {
+    font-family: 'gloria_hallelujahregular';
+    src: url('../fonts/gloriahallelujah-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gloriahallelujah-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'luckiest_guyregular';
+    src: url('../fonts/luckiestguy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/luckiestguy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('../fonts/happymonkey-regular-webfont.woff2') format('woff2'),
+         url('../fonts/happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --bg-color: #D73135;
+    --text-color: #ffffff;
+    --hover-color: #FFDB58;
+    --background: rgba(0, 0, 0, .3);
+    --boxshadow: 30px 30px 40px rgba(0, 0, 0, .3),
+    -30px 30px 40px rgba(0, 0, 0, .3);
+    --text-shadow: 3px 3px 3px rgba(0, 0, 0, .8);
+    --tab-width: 900px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    min-width: 0;
+    text-decoration: none;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    width: 100%;
+    background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    /*had backdrop-filter: saturate(2.5); in body tag causing 
+    header to not stay in fixed position*/
+}
+
+/*Default States for <TAGS> + animations/transitions*/
+
+.spacer{
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    z-index: 998;
+}
+
+ul,
+li{
+    list-style-type: none;
+    padding: 0;
+}
+
+.fade-in{
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.active{
+    background-color: black;
+}
+
+h1{
+    font-family: 'luckiest_guyregular';
+    font-size: 2.5em;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+h2{
+    font-family: 'happy_monkeyregular';
+    padding: 1rem 3rem;
+}
+
+p{
+    font-family: 'gloria_hallelujahregular';
+    padding: 1rem 3rem;
+    font-size: 1.2em;
+}
+
+a{
+    font-family: 'happy_monkeyregular';
+    padding: 0 1em;
+}
+
+a,
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover,
+li:hover,
+#myBtn:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
+}
+
+/*Default States for <TAGS> + animations/transitions*/
+
+
+/*Banner Start*/
+
+.banner{
+    max-width: 900px;
+    background-color: var(--bg-color);
+    background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-size: 25%;
+    padding-bottom: 1em;
+}
+
+.banner-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.banner-img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.banner-img img{
+    width: 50%;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.banner-text img{
+    width: 50%;
+}
+
+/*Banner End*/
+
+/*Side Nav Start*/
+
+#mySidenav.sidenav{
+    height: 100%;
+    margin: 0;
+    width: 60%;
+    position: fixed; 
+    z-index: 2000; 
+    top: 0; 
+    left: -100%;
+    background-color: rgba(0, 0, 0, .9);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.sidenav-content{
+    height: 80%;
+}
+
+.sidenav a,
+.sidenav ul,
+.sidenav p{
+    font-family: 'happy_monkeyregular';
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: .5em;
+}
+
+#side-logo{
+    max-width: 40%;
+    padding: .5em;
+}
+
+.closebtn{
+    padding: 0;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*Side Nav End*/
+
+/*Header Start*/
+
+#home{
+    position: relative;
+    top: -150px;
+    z-index: 998;
+    width: 100%;
+    max-height: 140px;
+}
+
+header{
+    font-family: 'happy_monkeyregular';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 140px;
+    background-image: url(../images/header-left.png), url(../images/header-right.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: top left, top right;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+    clip-path: inset(-15px 0px -15px 0px);
+    background-color: var(--bg-color);
+    list-style: none;
+}
+
+.logohbmenu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logohbmenu button{
+    background: transparent;
+    border: none;
+    width: 20%;
+
+}
+
+.logohbmenu button img{
+    max-width: 5em;
+    margin: .5em;
+    background-color: #fce89d;
+    box-shadow: var(--text-shadow);
+    transition: all .2s ease-in-out; 
+}
+
+.logohbmenu button img:hover{
+    background-color: #ffeeb2;
+    transform: translatex(4px);
+}
+
+.logohbmenu button img:active{
+    transform: scale(1.5);
+}
+
+img#hbmenu{
+    display: none;
+    padding: .3em;
+    max-height: 35px;
+    border-radius: 25%;
+}
+
+#logo{
+    max-height: 140px;
+}
+
+.navbar{
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a.fa{
+    padding-right: 1.2em;
+    font-size: 1em;
+}
+
+/*Header End*/
+
+/*Main Start*/
+
+main{
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px -15px);
+    background-image: url(/images/hotdogbanner2.png);
+    background-repeat: repeat-y;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+.about-text p{
+    padding: 1rem 3rem 0 3rem ;
+}
+
+.about h1{
+    display: none;
+    padding: 1rem 3rem;
+    text-align: left;
+}
+
+.updawg{
+    width: 50%;
+    min-width: 350px;
+    padding: 0 3rem;
+}
+
+.read-more-button{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+#myBtn{
+    font-family: 'happy_monkeyregular';
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#more {display: none;}
+
+/*Main End*/
+
+/*Menu Start*/
+
+.menu{
+    background-color: var(--bg-color);
+    width: 85%;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 65px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.menu-button-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1em;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-button-bar button{
+    background-color: transparent;
+    padding: 0;
+    margin: 0 2px;
+}
+
+h2.menu-button{
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-button:hover{
+    transition-duration: .5s;
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+    color: #FFDB58;
+}
+
+.food{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    transition-duration: 1.5s;
+    border-radius: 0 0 20px 20px;
+}
+
+.food img{
+    width:33.33%;
+    object-fit: cover;
+    border-radius: 0 0 0 20px;
+}
+
+.menu .food div{
+    display: flex;
+    flex-direction: column;
+    width: 66.66%;
+}
+
+/*Menu End*/
+
+/*Footer Start*/
+
+footer{
+    margin-top: auto;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'happy_monkeyregular';
+    font-weight: bolder;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+    clip-path: inset(-15px 0px -15px 0px);
+    background-color: var(--bg-color);
+}
+
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: flex-start;
+}
+
+footer a,
+footer p{
+    font-family: 'gloria_hallelujahregular';
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 1em;
+    position: left;
+}
+
+footer a:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    color: #FFDB58;
+}
+
+.mascot{
+    min-height: 145px;
+    min-width: 145px;
+    transform: scaleX(-1);
+    bottom: 0;
+}
+
+.mascot img{
+    height: 100%;
+    position: fixed;
+
+}
+
+/*Footer End*/
+
+@media only screen and (max-width: 420px){
+
+    h2.menu-button{
+        padding: 5px 10px;
+        border-radius: 5px 5px;
+        margin: 5px 0;
+    }
+
+    .menu-button-bar{
+        justify-content: flex-start;
+    }
+
+    .mascot{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about h1{
+        display: flex;
+    }
+
+    .updawg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    a.fa{
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .food img{
+        display: none;
+    }
+
+    .menu{ 
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .food {
+        border-radius: 0%;
+    }
+
+    .menu .food div{
+        width: 100%;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    img#hbmenu{
+        display: block;
+    }
+
+    .read-more-button{
+        height: 66px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .menu-button-bar{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    main{
+        max-width: 1200px;
+    }
+}   
+    .banner{
+        max-width: 1200px;
+    }
+
+
+
+@media only screen and (min-width: 1800px) {
+    main{
+        max-width: 1500px;
+    }
+}   
+    .banner{
+        max-width: 1500px;
+    }
