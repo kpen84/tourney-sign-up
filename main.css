@@ -33,6 +33,8 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'impact';
+    font-weight: normal;
 
     
     /*had backdrop-filter: saturate(2.5); in body tag causing 
@@ -69,8 +71,8 @@ li{
 
 h1{
     font-family: 'impact';
-    font-size: 2.5em;
     font-weight: normal;
+    font-size: 2.5em;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -79,19 +81,16 @@ h1{
     padding: 10px 0;
 }
 
-h2{
-    font-family: 'impactregular';
+h2 {
     padding: 1rem 3rem;
 }
 
 p{
-    font-family: 'impactregular';
     padding: 1rem 3rem;
     font-size: 1.2em;
 }
 
 a{
-    font-family: 'impactregular';
     padding: 0 1em;
 }
 
@@ -183,7 +182,7 @@ li:hover,
 .sidenav a,
 .sidenav ul,
 .sidenav p{
-    font-family: 'happy_monkeyregular';
+
     font-size: 25px;
     color: #ffffff;
     text-transform: uppercase;
@@ -342,12 +341,11 @@ main{
 }
 
 #myBtn{
-    font-family: 'happy_monkeyregular';
+
     font-size: 1.5em;
     border: none;
     background-color: transparent;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 #more {display: none;}
@@ -422,8 +420,6 @@ footer{
     margin-top: auto;
     display: flex;
     text-transform: uppercase;
-    font-family: 'happy_monkeyregular';
-    font-weight: bolder;
     justify-content: space-between;
     width: 100%;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
@@ -440,7 +436,6 @@ footer{
 
 footer a,
 footer p{
-    font-family: 'gloria_hallelujahregular';
     margin: 0 0;
     padding: 0 0;
     font-size: 1em;
