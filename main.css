@@ -43,12 +43,6 @@ body{
 
 /*Default States for <TAGS> + animations/transitions*/
 
-.spacer{
-    visibility: hidden;
-    display: block;
-    height: 0px;
-    z-index: 998;
-}
 
 ul,
 li{
@@ -70,8 +64,6 @@ li{
 }
 
 h1{
-    font-family: 'impact';
-    font-weight: normal;
     font-size: 2.5em;
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +107,6 @@ li:hover,
 
 .banner{
     max-width: 900px;
-    /*background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);*/
     background-repeat: no-repeat;
     background-position: top left, top right, bottom left, bottom right;
     background-size: 25%;
@@ -138,6 +129,7 @@ li:hover,
 
 .banner-img img{
     width: 50%;
+    filter: drop-shadow(16px 16px 10px black);
 }
 
 .banner-text {
@@ -229,12 +221,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-height: 140px;
-    /*background-image: url(../images/header-left.png), url(../images/header-right.png);*/
-    clip-path: inset(-15px 0px -15px 0px);
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .8);
     list-style: none;
+    padding: 1em;
 }
 
 .logohbmenu{
