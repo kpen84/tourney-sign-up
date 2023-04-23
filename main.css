@@ -1,29 +1,4 @@
-@font-face {
-    font-family: 'gloria_hallelujahregular';
-    src: url('../fonts/gloriahallelujah-regular-webfont.woff2') format('woff2'),
-         url('../fonts/gloriahallelujah-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'luckiest_guyregular';
-    src: url('../fonts/luckiestguy-regular-webfont.woff2') format('woff2'),
-         url('../fonts/luckiestguy-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'happy_monkeyregular';
-    src: url('../fonts/happymonkey-regular-webfont.woff2') format('woff2'),
-         url('../fonts/happymonkey-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 :root {
     --bg-color: #D73135;
@@ -53,10 +28,13 @@ body{
     justify-content: center;
     scroll-behavior: smooth;
     width: 100%;
-    background: linear-gradient(140deg, rgba(215,49,53,1) 0%, rgba(255,224,22,1) 100%);
+    background-image: url(../images/lvl3helm.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
     /*had backdrop-filter: saturate(2.5); in body tag causing 
     header to not stay in fixed position*/
 }
@@ -138,7 +116,6 @@ li:hover,
 
 .banner{
     max-width: 900px;
-    background-color: var(--bg-color);
     /*background-image: url(../images/header-left.png), url(../images/header-right.png), url(../images/footer-left.png), url(../images/footer-right.png);*/
     background-repeat: no-repeat;
     background-position: top left, top right, bottom left, bottom right;
@@ -241,7 +218,6 @@ li:hover,
 }
 
 header{
-    font-family: 'happy_monkeyregular';
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: bolder;
@@ -254,12 +230,8 @@ header{
     width: 100%;
     max-height: 140px;
     /*background-image: url(../images/header-left.png), url(../images/header-right.png);*/
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: top left, top right;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
-    background-color: var(--bg-color);
+    background-color: transparent;
     list-style: none;
 }
 
@@ -278,14 +250,15 @@ header{
 .logohbmenu button img{
     max-width: 5em;
     margin: .5em;
-    background-color: #fce89d;
-    box-shadow: var(--text-shadow);
+
     transition: all .2s ease-in-out; 
 }
 
 .logohbmenu button img:hover{
-    background-color: #ffeeb2;
+
     transform: translatex(4px);
+    box-shadow: var(--text-shadow);
+
 }
 
 .logohbmenu button img:active{
@@ -333,7 +306,7 @@ main{
     max-width: 900px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
-    /*background-image: url(/images/hotdogbanner2.png);*/
+    background-color: rgba(0, 0, 0, .3);
     background-repeat: repeat-y;
 }
 
@@ -381,7 +354,7 @@ main{
 /*Menu Start*/
 
 .menu{
-    background-color: var(--bg-color);
+    background-color: transparent;
     width: 85%;
     border-radius: 20px;
     align-items: center;
@@ -452,7 +425,6 @@ footer{
     width: 100%;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
     clip-path: inset(-15px 0px -15px 0px);
-    background-color: var(--bg-color);
 }
 
 .footer-main{
