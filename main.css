@@ -68,9 +68,9 @@ li{
 }
 
 h1{
-    font-family: 'impactbold';
+    font-family: 'impact';
     font-size: 2.5em;
-    font-weight: bolder;
+    font-weight: normal;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -141,10 +141,13 @@ li:hover,
     width: 50%;
 }
 
-.banner-text{
+.banner-text {
     display: flex;
     justify-content: center;
     max-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .banner-text img{
@@ -306,7 +309,7 @@ main{
     max-width: 900px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px -15px);
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .5);
     background-repeat: repeat-y;
 }
 
