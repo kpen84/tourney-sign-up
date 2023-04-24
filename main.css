@@ -436,14 +436,14 @@ footer a:hover{
     color: #FFDB58;
 }
 
-.mascot{
+.flare{
     min-height: 145px;
     min-width: 145px;
     transform: scaleX(-1);
     bottom: 0;
 }
 
-.mascot img{
+.flare img{
     height: 100%;
     position: fixed;
 
@@ -460,7 +460,8 @@ width: 45vw;
     justify-content: space-around;
     align-items: flex-start;
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
+    padding: 1.5em 0;
 }
 
 .multi{
@@ -480,7 +481,7 @@ width: 45vw;
         justify-content: flex-start;
     }
 
-    .mascot{
+    .flare{
         display: none;
     }
 }
