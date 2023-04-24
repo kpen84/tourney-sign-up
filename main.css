@@ -390,21 +390,23 @@ footer p{
 }
 
 
-
-/*#twitch-1hitbro iframe,
-#twitch-froddoyo iframe{
-
-}*/
-
 .twitch-players{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1.5em 0;
+    padding: none;
+    height: 90vh;
+    width: 100%;
 }
 
+#twitch1,
+#twitch2{
+width: 50%;
+height: 100%;
+}
+
+
 .multi{
-    max-width: 100%;
+    min-width: 100%;
 }
 
 
