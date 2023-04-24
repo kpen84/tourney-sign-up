@@ -16,21 +16,6 @@ function moreText() {
     }
 }
 
-//Menu Tabs
-
-function openFood(evt, foodName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("food");
-  for (i = 0; i < x.length; i++) {
-  x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(foodName).style.display = "flex";
-  evt.currentTarget.className += " active";
-}
 
 //Sidebar Nav
 
@@ -42,29 +27,14 @@ function closeNav() {
   document.getElementById("mySidenav").style.left = "-1000px";
 }
 
-//Scroll Nav
+//Twitch
 
-const sections = document.querySelectorAll("section[id]");
-window.addEventListener("scroll", navHighlighter);
-
-function navHighlighter() {
-  let scrollY = window.pageYOffset;
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
-    sectionId = current.getAttribute("id");
-    
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
-    } else {
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
-    }
-  });
+function twitch() {
+  window.open("https://www.twitch.tv/froddoyo/")
 }
 
-function open_win() {
-  window.open("https://www.twitch.tv/froddoyo/")
+//Twitter
+
+function twitter() {
+  window.open("https://twitter.com/froddoyo/")
 }

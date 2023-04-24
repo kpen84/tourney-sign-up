@@ -313,7 +313,6 @@ main{
 }
 
 .about h1{
-    display: none;
     padding: 1rem 3rem;
     text-align: left;
 }
@@ -342,10 +341,9 @@ footer{
     margin-top: auto;
     display: flex;
     text-transform: uppercase;
-    width: 100%;
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 1);
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     padding: 2em;
 }
@@ -365,9 +363,7 @@ footer p{
     font-weight: normal;
 }
 
-.flare{
-    width: 70%;
-}
+
 
 #twitch-1hitbro iframe,
 #twitch-froddoyo iframe{
@@ -391,9 +387,7 @@ width: 45vw;
 
 @media only screen and (max-width: 420px){
 
-    .flare{
-        display: none;
-    }
+    
 }
 
 @media only screen and (max-width: 650px) {
@@ -423,6 +417,10 @@ width: 45vw;
 
     .read-more-button{
         height: 66px;
+    }
+
+    .flare{
+        display: none;
     }
 
 }
