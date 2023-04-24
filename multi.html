@@ -67,26 +67,48 @@
         <li onclick="closeNav()"><a href="multi.html">Watch</a></li> 
         </ul>
 
-</div>
+    </div>
     
     <div class="twitch-players">
 
-    <div id="twitch-1hitbro"></div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
-    new Twitch.Embed("twitch-1hitbro", {
-        channel: "1hitbro",
-    });
-    </script>
+        <div id="1hitbro"></div>
 
-    <div id="twitch-froddoyo"></div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
-    new Twitch.Embed("twitch-froddoyo", {
-        channel: "froddoyo",
-    });
-    </script>
-    
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-1hitbro"></div>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+        new Twitch.Embed("twitch-1hitbro", {
+            width: 854,
+            height: 480,
+            channel: "1hitbro",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["1hitbrofroddoyotourney.com"]
+        });
+        </script>
+
+        <div id="froddoyo"></div>
+
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-froddoyo"></div>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+        new Twitch.Embed("twitch-froddoyo", {
+            width: 854,
+            height: 480,
+            channel: "froddoyo",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["1hitbrofroddoyotourney.com"]
+        });
+        </script>
+
     </div>
 
 
