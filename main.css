@@ -387,10 +387,10 @@ footer p{
 
 
 
-#twitch-1hitbro iframe,
+/*#twitch-1hitbro iframe,
 #twitch-froddoyo iframe{
 
-}
+}*/
 
 .twitch-players{
     display: flex;
