@@ -334,8 +334,8 @@ main{
 }
 
 .about h1{
-    padding: 1rem 3rem;
-    text-align: left;
+    padding: 0 3rem;
+    padding-top: 3rem;
 }
 
 .read-more-button{
