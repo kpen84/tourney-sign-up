@@ -60,7 +60,7 @@ li{
 }
 
 .active{
-    color: RED;
+    color: #808080;
 }
 
 h1{
@@ -317,6 +317,10 @@ main{
 .about-text p{
     padding: 1rem 3rem 0 3rem ;
     font-weight: lighter;
+}
+
+#two{
+    color: red;
 }
 
 #discord{
