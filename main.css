@@ -222,7 +222,7 @@ header{
     justify-content: space-between;
     align-items: center;
     max-height: 140px;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 1);
     list-style: none;
     padding: 1em;
 }
@@ -342,33 +342,31 @@ footer{
     margin-top: auto;
     display: flex;
     text-transform: uppercase;
-    justify-content: space-between;
     width: 100%;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2em;
 }
 
 .footer-main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1em;
     align-items: flex-start;
 }
 
 footer p{
+    padding: 1em 0;
     margin: 0 0;
-    padding: .5em 0;
     font-size: 1em;
     position: left;
     font-weight: normal;
 }
 
-
-
-.flare img{
-    height: 100%;
-    max-height: 500px;
-
+.flare{
+    width: 70%;
 }
 
 #twitch-1hitbro iframe,
@@ -389,31 +387,11 @@ width: 45vw;
 .multi{
     max-width: 100%;
 }
-/*Footer End*/
+
 
 @media only screen and (max-width: 420px){
 
-    h2.menu-button{
-        padding: 5px 10px;
-        border-radius: 5px 5px;
-        margin: 5px 0;
-    }
-
-    .menu-button-bar{
-        justify-content: flex-start;
-    }
-
     .flare{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .about h1{
-        display: flex;
-    }
-
-    .updawg{
         display: none;
     }
 }
@@ -430,22 +408,6 @@ width: 45vw;
         display: none;
     }
 
-    .food img{
-        display: none;
-    }
-
-    .menu{ 
-        width: 100%;
-        border-radius: 0%;
-    }
-
-    .food {
-        border-radius: 0%;
-    }
-
-    .menu .food div{
-        width: 100%;
-    }
 
     #logo{
         display: none;
