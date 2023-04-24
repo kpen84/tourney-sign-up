@@ -65,14 +65,6 @@ function navHighlighter() {
   });
 }
 
-//twitch links
-
-//$('.fa-twitch').click(function(e) {
-//  e.preventDefault();
-//  window.open('www.twitch.tv/1hitbro');
-//  window.open('www.twitch.tv/froddoyo');
-//});
-
 function open_win() {
   window.open("https://www.twitch.tv/froddoyo/")
 }

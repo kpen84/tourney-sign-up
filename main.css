@@ -71,6 +71,7 @@ h1{
     justify-content: center;
     text-transform: uppercase;
     padding: 10px 0;
+    font-weight: normal;
 }
 
 h2 {
@@ -234,22 +235,17 @@ header{
 .logohbmenu button{
     background: transparent;
     border: none;
-    width: 20%;
+    width: 100%;
 
 }
 
 .logohbmenu button img{
-    max-width: 5em;
-    margin: .5em;
-
+    max-width: 6em;
     transition: all .2s ease-in-out; 
 }
 
 .logohbmenu button img:hover{
-
     transform: translatex(4px);
-    box-shadow: var(--text-shadow);
-
 }
 
 .logohbmenu button img:active{
@@ -258,8 +254,7 @@ header{
 
 img#hbmenu{
     display: none;
-    padding: .3em;
-    max-height: 35px;
+    max-height: 34px;
     border-radius: 25%;
 }
 
@@ -268,8 +263,8 @@ img#hbmenu{
 }
 
 .navbar{
-    width: 50%;
-    justify-content: space-around;
+    width: 60%;
+    justify-content: flex-start;
 }
 
 .navbar ul{
@@ -278,17 +273,18 @@ img#hbmenu{
     align-items: center;
 }
 
+
 .contact{
     display: flex;
     justify-content: flex-end;
 }
 
-a.fa{
+.fa{
     padding-right: 1.2em;
     font-size: 1em;
 }
 
-a.fab{
+.fa-discord:before{ 
     padding-right: 1.2em;
     font-size: 1em;
 }
@@ -340,68 +336,6 @@ main{
 
 /*Main End*/
 
-/*Menu Start*/
-
-.menu{
-    background-color: transparent;
-    width: 85%;
-    border-radius: 20px;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 65px;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-}
-
-.menu-button-bar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 1em;
-    text-align: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-.menu-button-bar button{
-    background-color: transparent;
-    padding: 0;
-    margin: 0 2px;
-}
-
-h2.menu-button{
-    padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
-}
-
-.menu-button:hover{
-    transition-duration: .5s;
-    transition: all .2s ease-in-out;
-    transform: scale(1.15);
-    color: #FFDB58;
-}
-
-.food{
-    width: 100%;
-    display: flex;
-    background-color: black;
-    transition-duration: 1.5s;
-    border-radius: 0 0 20px 20px;
-}
-
-.food img{
-    width:33.33%;
-    object-fit: cover;
-    border-radius: 0 0 0 20px;
-}
-
-.menu .food div{
-    display: flex;
-    flex-direction: column;
-    width: 66.66%;
-}
-
-/*Menu End*/
-
 /*Footer Start*/
 
 footer{
@@ -410,8 +344,7 @@ footer{
     text-transform: uppercase;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
-    clip-path: inset(-15px 0px -15px 0px);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .footer-main{
@@ -422,30 +355,19 @@ footer{
     align-items: flex-start;
 }
 
-footer a,
 footer p{
     margin: 0 0;
-    padding: 0 0;
+    padding: .5em 0;
     font-size: 1em;
     position: left;
+    font-weight: normal;
 }
 
-footer a:hover{
-    transition: all .2s ease-in-out;
-    transform: scale(1.05);
-    color: #FFDB58;
-}
 
-.flare{
-    min-height: 145px;
-    min-width: 145px;
-    transform: scaleX(-1);
-    bottom: 0;
-}
 
 .flare img{
     height: 100%;
-    position: fixed;
+    max-height: 500px;
 
 }
 
@@ -498,7 +420,8 @@ width: 45vw;
 
 @media only screen and (max-width: 650px) {
 
-    a.fa{
+    a.fa
+    a.fa-discord{
         font-size: 1.5em;
         margin: 0;
     }
