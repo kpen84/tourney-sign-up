@@ -60,7 +60,7 @@ li{
 }
 
 .active{
-    background-color: black;
+    color: RED;
 }
 
 h1{
@@ -94,6 +94,9 @@ button{
 }
 
 a:hover,
+#discord:hover,
+#twitch:hover,
+#chat:hover,
 li:hover,
 #myBtn:hover{
     transition: all .2s ease-in-out;
@@ -140,6 +143,7 @@ li:hover,
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding: 1em;
 }
 
 .banner-text img{
@@ -306,10 +310,27 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 .about-text p{
     padding: 1rem 3rem 0 3rem ;
+    font-weight: lighter;
+}
+
+#discord{
+    text-transform: uppercase;
+    color: #7289da;
+}
+
+#twitch{
+    text-transform: uppercase;
+    color: #6441a5;
+}
+
+#chat{
+    text-transform: uppercase;
+    color: red;
 }
 
 .about h1{
