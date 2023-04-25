@@ -38,3 +38,4 @@ function twitch() {
 function twitter() {
   window.open("https://twitter.com/froddoyo/")
 }
+
