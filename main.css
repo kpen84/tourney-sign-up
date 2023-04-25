@@ -314,6 +314,17 @@ main{
     padding-bottom: 4em;
 }
 
+.about-banner-text{
+    display: none;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 3rem;
+
+}
+
 .melee-container{
     display: flex;
     justify-content: center;
@@ -421,11 +432,6 @@ height: 100%;
 }
 
 
-@media only screen and (max-width: 420px){
-
-    
-}
-
 @media only screen and (max-width: 650px) {
 
     a.fa
@@ -438,6 +444,9 @@ height: 100%;
         display: none;
     }
 
+    .about-banner-text{
+        display: flex;
+    }
 
     #logo{
         display: none;
