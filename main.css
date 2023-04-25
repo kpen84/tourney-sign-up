@@ -314,6 +314,17 @@ main{
     padding-bottom: 4em;
 }
 
+.melee-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.melee{
+    width: 30%;
+    height: 30%;
+}
+
 .about-text p{
     padding: 1rem 3rem 0 3rem ;
     font-weight: lighter;
