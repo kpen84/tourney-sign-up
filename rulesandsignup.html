@@ -45,8 +45,7 @@
         <div class="navbar">
             <ul>
             <li><a href="index.html">Home</a></li>    
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfknjXh82Xj1qiBt2K0Var0R8qPxLP0GifCiYsxvBK_f8cyRA/viewform?usp=sharing">Sign-Up</a></li>
-            <li><a class="active" href="rules.html">Rules!</a></li>
+            <li><a class="active" href="rulesandsignup.html">Rules and Sign-Up!</a></li>
             <li><a href="https://StreamElements.com/1hitbro/tip">Sponsor</a></li>  
             <li><a href="multi.html">Watch</a></li> 
             </ul>
@@ -73,10 +72,7 @@
             <li onclick="closeNav()"><a href="index.html">Home</a></li>
             </ul>
             <ul>
-            <li onclick="closeNav()"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfknjXh82Xj1qiBt2K0Var0R8qPxLP0GifCiYsxvBK_f8cyRA/viewform?usp=sharing">Sign-Up</a></li>
-            </ul>
-            <ul>
-            <li onclick="closeNav()"><a class="active" href="rules.html">Rules!</a></li>     
+            <li onclick="closeNav()"><a class="active" href="rulesandsignup.html">Rules and Sign-Up!</a></li>     
             </ul>
             <ul>
             <li onclick="closeNav()"><a href="https://StreamElements.com/1hitbro/tip">Sponsor</a></li>
@@ -111,6 +107,36 @@
         <h1>Please re-read the rules before the start of the Tournament!</h1>
         <h1>There may be changes or revisions!</h1>
     </div>
+
+    <h1 class="formh1">Sign-up Form</h1>
+
+    <form action="https://api.sheetmonkey.io/form/qPmxfMXmFibwM43icDi8Gu" method="post">
+
+
+		<label for="player1_ign" placeholder="Example= 1HITBro">Player One In-Game Name:</label><br>
+		<input type="text" id="player1_ign" name="entry.1" required><br><br>
+
+		<label for="player2_ign" placeholder="Example= Froddoyo">Player Two In-Game Name:</label><br>
+		<input type="text" id="player2_ign" name="entry.2" required><br><br>
+
+		<label for="player1_discord" placeholder="Example= 1HITBro#5649">Player One Discord ID:</label><br>
+		<input type="text" id="player1_discord" name="entry.3" required><br><br>
+
+		<label for="player2_discord"placeholder="Example= Froddoyo#6969">Player Two Discord ID:</label><br>
+		<input type="text" id="player2_discord" name="entry.4" required><br><br>
+
+		<label for="player1_paypal" placeholder="Example= pubgplayer@gmail.com">Player One PayPal Email:</label><br>
+		<input type="email" id="player1_paypal" name="entry.5" required><br><br>
+
+		<label for="player2_paypal" placeholder="Example= pubgplayer@gmail.com">Player Two PayPal Email:</label><br>
+		<input type="email" id="player2_paypal" name="entry.6" required><br><br>
+
+		<label for="rules_agreement">I understand and agree to the rules of the tournament:</label>
+		<input type="checkbox" id="rules_agreement" name="entry.7" value="Yes" required><br><br>
+
+		<input type="submit" value="Submit">
+
+	</form>
 
 
 

@@ -70,8 +70,12 @@ h1{
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: .5em;
     font-weight: normal;
+}
+
+.formh1{
+    color: red;
 }
 
 h2 {
@@ -310,7 +314,7 @@ main{
 .about{
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
+    padding-top: none;
     padding-bottom: 4em;
 }
 
@@ -361,8 +365,8 @@ main{
 }
 
 .about h1{
-    padding: 0 3rem;
-    padding-top: 3rem;
+    padding: 0 1rem;
+    padding-top: 1em;
 }
 
 .read-more-button{
