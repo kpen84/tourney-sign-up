@@ -33,7 +33,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'impact';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
     font-weight: normal;
 
     
@@ -83,9 +83,11 @@ h2 {
 }
 
 p{
-    padding: 1rem 3rem;
+    padding: .5em 3em;
     font-size: 1.2em;
     font-weight: lighter;
+    line-height: 1.5em;
+    font-family: sans-serif;
 }
 
 a{
@@ -315,7 +317,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: none;
-    padding-bottom: 4em;
+    padding-bottom: none;
 }
 
 .about-banner-text{
@@ -341,7 +343,6 @@ main{
 }
 
 .about-text p{
-    padding: 1rem 3rem 0 3rem ;
     font-weight: lighter;
 }
 
@@ -362,11 +363,6 @@ main{
 #chat{
     text-transform: uppercase;
     color: red;
-}
-
-.about h1{
-    padding: 0 1rem;
-    padding-top: 1em;
 }
 
 .read-more-button{
@@ -409,6 +405,7 @@ footer{
 }
 
 footer p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
     padding: 1em 0;
     margin: 0 0;
     font-size: 1em;
@@ -454,7 +451,7 @@ form {
   input[type="email"] {
     border: 2px solid #000000;
     border-radius: 5px;
-    font-family: Impact, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
     font-size: 18px;
     margin-bottom: 20px;
     padding: 10px;
@@ -471,7 +468,7 @@ form {
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
-    font-family: Impact, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     margin-top: 20px;
     padding: 10px 20px;
