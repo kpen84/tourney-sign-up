@@ -83,7 +83,7 @@ h2 {
 }
 
 p{
-    padding: .5em 3em;
+    padding: 1em 3em;
     font-size: 1.2em;
     font-weight: lighter;
     line-height: 1.5em;
@@ -318,6 +318,7 @@ main{
     flex-direction: column;
     padding-top: none;
     padding-bottom: none;
+    padding: 1em 3em;
 }
 
 .about-banner-text{
@@ -406,10 +407,7 @@ footer{
 
 footer p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
-    padding: 1em 0;
-    margin: 0 0;
-    font-size: 1em;
-    position: left;
+    padding: 1em;
     font-weight: normal;
 }
 
