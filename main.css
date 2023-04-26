@@ -488,7 +488,6 @@ form {
     font-family: sans-serif; /* Change the placeholder text color */
   }
   
-  /* responsive styles 
   @media screen and (max-width: 600px) {
     form {
       padding: 10px;
