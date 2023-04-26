@@ -79,7 +79,9 @@ h1{
 }
 
 h2 {
-    padding: 1rem 3rem;
+    padding: .5em;
+    text-align: center;
+    font-weight: normal;
 }
 
 p{
@@ -101,6 +103,7 @@ button{
 }
 
 a:hover,
+#donate:hover,
 #discord:hover,
 #twitch:hover,
 #chat:hover,
@@ -484,6 +487,10 @@ form {
   ::placeholder {
     color: #ccc;
     font-family: sans-serif; /* Change the placeholder text color */
+  }
+
+  #donate{
+    color: red;
   }
 
   @media screen and (max-width: 900px) {
