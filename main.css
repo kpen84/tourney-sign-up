@@ -283,20 +283,14 @@ img#hbmenu{
 }
 
 
-.contact{
+.contact {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    max-width: 200px;
+    width: 25%;
 }
 
-.fa{
-    padding-right: 1.2em;
-    font-size: 1em;
-}
 
-.fa-discord:before{ 
-    padding-right: 1.2em;
-    font-size: 1em;
-}
 
 /*Header End*/
 
@@ -491,6 +485,13 @@ form {
     color: #ccc;
     font-family: sans-serif; /* Change the placeholder text color */
   }
+
+  @media screen and (max-width: 900px) {
+    .flare{
+        display: none;
+    }
+    
+  }
   
   @media screen and (max-width: 600px) {
 
@@ -498,6 +499,9 @@ form {
     input[type="submit"] {
       font-size: 16px;
       padding: 5px 10px;
+    }
+    .flare{
+        display: none;
     }
   }
 
