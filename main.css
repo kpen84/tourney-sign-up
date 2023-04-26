@@ -415,11 +415,14 @@ footer p{
     padding: none;
     height: 90vh;
     width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 #twitch1,
 #twitch2{
-width: 50%;
+width: 45%;
+max-width: 600px;
 height: 100%;
 }
 
