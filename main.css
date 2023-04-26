@@ -188,7 +188,8 @@ li:hover,
     color: #ffffff;
     text-transform: uppercase;
     transition: 0.3s;
-    padding: .5em;
+    padding: .5em 0;
+    text-align: center;
 }
 
 #side-logo{
