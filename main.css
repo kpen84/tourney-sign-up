@@ -315,7 +315,7 @@ main{
     flex-direction: column;
     padding-top: none;
     padding-bottom: none;
-    padding: 1em 3em;
+    padding: 1em 0;
 }
 
 .about-banner-text{
@@ -453,7 +453,7 @@ form {
     font-size: 18px;
     margin-bottom: 20px;
     padding: 10px;
-    width: 100%;
+    width: 80%;
   }
 
   input[type="text"], 
@@ -492,9 +492,7 @@ form {
   }
   
   @media screen and (max-width: 600px) {
-    form {
-      padding: 10px;
-    }
+
     
     input[type="submit"] {
       font-size: 16px;
@@ -510,6 +508,9 @@ form {
         font-size: 1.5em;
         margin: 0;
     }
+    form {
+        padding: 10px;
+      }
 
     .banner{
         display: none;
