@@ -433,8 +433,7 @@ height: 100%;
 
 form {
     max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;
   }
   
   label {
@@ -451,7 +450,8 @@ form {
     font-size: 18px;
     margin-bottom: 20px;
     padding: 10px;
-    width: 80%;
+    max-width: 500px;
+    width: 95%;
   }
 
   input[type="text"], 
