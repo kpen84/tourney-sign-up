@@ -497,6 +497,8 @@ form {
     .flare{
         display: none;
     }
+
+
     
   }
   
@@ -551,6 +553,22 @@ form {
     .flare{
         display: none;
     }
+
+    .twitch-players{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: none;
+        align-items: center;
+        width: 100vw;
+        height: 120vh;
+    }
+
+    #twitch1,
+#twitch2{
+width: 90%;
+height: 45%;
+}
 
 }
 
