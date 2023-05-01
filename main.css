@@ -26,7 +26,6 @@ html {
 body{
     display: flex;
     justify-content: center;
-    scroll-behavior: smooth;
     width: 100%;
     background-image: url(../images/lvl3helm.jpg);
     background-repeat: no-repeat;
@@ -340,6 +339,7 @@ main{
 
 .about-text p{
     font-weight: lighter;
+    line-height: 1.8em;
 }
 
 #two{
