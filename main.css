@@ -477,6 +477,10 @@ form {
     margin-top: 20px;
     padding: 10px 20px;
   }
+
+  #wait{
+    color: red;
+  }
   
   input[type="submit"]:hover {
     background-color: #FFDB58;
